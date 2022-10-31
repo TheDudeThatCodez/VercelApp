@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {   
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(5,190,210,1) 100%);
+    color: white;
+}
+
+#navbarNavAltMarkup > div > a.btn.btn-primary.btn-lg.nav-link {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+body > div.container.h-100 > div > div.col-md-8 > div > button.btn.btn-primary.btn-lg {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body > div.container.h-100 > div > div.col > img {
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+}
+
+body > div.container.h-100 > div > div.col {
+    height: 100vh;
+}
+
+.btn-primary {
+    background-color: #046AA1;
+    border: none;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: xx-large;
+}
+
+.navbar-brand:hover {
+    color: #5FDAFA;
+}
+
+.nav-link {
+    color: white;
+    font-size: larger;
+    margin-left: 20px;
+}
+
+.text-highlight {
+    color: #5FDAFA;
+}
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+  h1 {font-size:1rem;} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  h1 {font-size:2rem;} /*1rem = 16px*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h1 {font-size:4rem;} /*1rem = 16px*/
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  h1 {font-size:4rem;} /*1rem = 16px*/    
+}
