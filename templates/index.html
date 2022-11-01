@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
-  <body>
+  <body class="overflow-hidden">
     <div class="container">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid mt-3">
@@ -28,17 +28,17 @@
         </nav>
     </div>
     <div class="container h-100">
-        <div class="row h-100 justify-content-center align-items-center">
-             <div class="col-md-8">
+        <div class="row">
+             <div class="col-sm-8 col-md-8 d-flex flex-column align-items-center justify-content-center">
                 <h1>Discover, Innovate, & Reimagine</h1>
                 <h5>The world's first and only platform for personalized AI. Making your imagination a reality.</h5>
-                <div class="mt-5">
+                <div class="mt-5 me-auto">
                     <button class="btn btn-primary"><i class="fa-solid fa-play"></i></button>
                     <p class="d-inline-block mr-5">Watch Video</p>
-                    <button class="btn btn-primary btn-lg" style="margin-left:100px">Explore</button>
+                    <button class="btn btn-primary btn-lg" id="explore-button" style="margin-left:100px">Explore</button>
                 </div>
             </div>
-            <div class="col d-none d-lg-block">
+            <div class="col d-flex align-items-center justify-content-center">
                 <img src="{{ url_for('static', filename='images/arm.png') }}"" class="img-fluid" alt="...">
             </div>
         </div>
